@@ -1,11 +1,17 @@
 package;
 
+import flixel.FlxSprite;
 import flixel.FlxState;
 
 class PlayState extends FlxState
 {
+	var _player:Player;
+	
 	override public function create():Void
 	{
+		_player = new Player(30, 60);
+		add(_player);
+		
 		super.create();
 	}
 
