@@ -131,7 +131,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "32",
+			build: "38",
 			company: "",
 			file: "DateSim",
 			fps: 60,
