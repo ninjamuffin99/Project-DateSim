@@ -32,11 +32,19 @@ class Player extends FlxSprite
 		_up = FlxG.keys.anyPressed([W, UP]);
 		_down = FlxG.keys.anyPressed([S, DOWN]);
 		
+		if (_left && _right)
+			_left = _right = false;
+		if (_up && _down)
+			_up = _down = false;
+		
 		if (_left)
 			velocity.x = -_speed;
 		if (_right)
 			velocity.x = _speed;
-			
+		if (_up)
+			velocity.y = -_speed;
+		if (_down)
+			velocity.y = _speed;
 		super.update(elapsed);
 	}
 	
