@@ -50,6 +50,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/electron particle_v1.zip");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
 		
@@ -147,7 +151,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "69",
+			build: "79",
 			company: "",
 			file: "DateSim",
 			fps: 60,

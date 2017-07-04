@@ -48,8 +48,10 @@ class PlayState extends FlxState
 	override public function update(elapsed:Float):Void
 	{
 		if (FlxG.keys.justPressed.R)
-			_dialogueStart(["You just pressed R!"], true, "Electron", _electronImage);
-		
+			_dialogueStart(["You just pressed R!", "Press E to make me go :("], true, "Electron", _electronImage);
+		if (FlxG.keys.justPressed.E)
+			_tweening(_electronImage, false);
+			
 		super.update(elapsed);
 	}
 	
@@ -66,8 +68,12 @@ class PlayState extends FlxState
 	{
 		if (tweenIn)
 		{
-			_image.x = 0- _image.width;
-			FlxTween.tween(_image, { x: 200 }, 1.5, { ease: FlxEase.quadOut});
+			_image.x = 0 - _image.width;
+			FlxTween.tween(_image, { x: 200 }, 1.5, { ease: FlxEase.backOut});
+		}
+		else
+		{
+			FlxTween.tween(_image, { x: 0 - _image.width}, 0.75, {ease: FlxEase.backIn});
 		}
 	}
 }
