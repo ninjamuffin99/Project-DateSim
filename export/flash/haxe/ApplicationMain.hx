@@ -34,11 +34,71 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
+		urls.push ("assets/data/typo_round/Read_Me.txt");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/data/typo_round/Typo Round test screen.url");
+		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/data/typo_round/typo_round_1024.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("Typo Round Bold Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Bold Italic Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Italic Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Light Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Light Italic Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Regular Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Thin Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("Typo Round Thin Italic Demo");
+		types.push (lime.Assets.AssetType.FONT);
+		
+		
+		urls.push ("assets/data/typo_round.zip");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
+		urls.push ("assets/images/concept/branching_pathsmaybe.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/characters_or_whatever.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/concept/electron_blush.jpg");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
 		urls.push ("assets/images/concept/electron_cheekyboy.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/electron_silly.jpg");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -54,12 +114,24 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.BINARY);
 		
 		
+		urls.push ("assets/images/electron_particle_v2.zip");
+		types.push (lime.Assets.AssetType.BINARY);
+		
+		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
+		urls.push ("assets/images/tease.gif");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/music/music-goes-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3");
+		types.push (lime.Assets.AssetType.MUSIC);
 		
 		
 		urls.push ("assets/sounds/sounds-go-here.txt");
@@ -151,7 +223,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "79",
+			build: "103",
 			company: "",
 			file: "DateSim",
 			fps: 60,
@@ -169,13 +241,13 @@ class ApplicationMain {
 					display: 0,
 					fullscreen: false,
 					hardware: true,
-					height: 480,
+					height: 720,
 					parameters: "{}",
 					resizable: true,
 					stencilBuffer: true,
 					title: "DateSim",
 					vsync: true,
-					width: 640,
+					width: 1280,
 					x: null,
 					y: null
 				},
@@ -193,7 +265,7 @@ class ApplicationMain {
 		
 		#if (js && html5)
 		#if (munit || utest)
-		openfl.Lib.embed (null, 640, 480, "000000");
+		openfl.Lib.embed (null, 1280, 720, "000000");
 		#end
 		#else
 		create ();

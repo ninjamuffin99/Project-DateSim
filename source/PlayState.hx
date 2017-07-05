@@ -7,6 +7,7 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
+import flixel.util.FlxGradient;
 
 class PlayState extends FlxState
 {
@@ -19,10 +20,15 @@ class PlayState extends FlxState
 	
 	override public function create():Void
 	{
-		_player = new Player(30, 60);
-		_dialogue = new Dialogue(3, 27);
+		var bg:FlxSprite;
+		bg = new FlxSprite();
+		bg.makeGraphic(FlxG.width, FlxG.height);
+		add(bg);
 		
-		_nameTag = new FlxText(_dialogue.x + 70, _dialogue.y + 100, 0 , "", 24);
+		_player = new Player(30, 60);
+		_dialogue = new Dialogue(4, 24, "assets/data/typo_round/Typo_Round_Regular_Demo.otf");
+		
+		_nameTag = new FlxText(_dialogue.x + 70, _dialogue.y + 100, 0 , "", 18);
 		_nameTextBox = new FlxSprite(_nameTag.x - 5, _nameTag.y - 5);
 		
 		
@@ -33,7 +39,7 @@ class PlayState extends FlxState
 		add(_electronImage);
 		
 		add(_dialogue);
-		_dialogue.setDialog(["This is a line of text some thing a nd other stuff words words idk loillfodlfdldfosfdofdosfd", "YOu can press space toskip stuff", "space also goes onto the next groups of WOOOOORDSSSS!!!!!", " I don't know what to put here!!"]);
+		_dialogue.setDialog(["This is a line of text some thing a nd other stuff words", "YOu can press space toskip stuff", "space also goes onto the next groups of WOOOOORDSSSS!!!!!", " I don't know what to put here!!"]);
 		
 		add(_nameTextBox);
 		
@@ -59,7 +65,9 @@ class PlayState extends FlxState
 	{
 		_dialogue.setDialog(words, autostart);
 		_nameTag.text = _name;
-		_nameTextBox.makeGraphic(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), FlxColor.BLUE);
+		//_nameTextBox.makeGraphic(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), FlxColor.BLUE);
+		
+		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
 		
 		_tweening(_imageTween, true);
 	}

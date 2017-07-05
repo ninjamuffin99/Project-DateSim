@@ -6,6 +6,7 @@ import flixel.group.FlxSpriteGroup;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.util.FlxDestroyUtil;
+import flixel.util.FlxGradient;
 import flixel.util.FlxTimer;
 import haxe.Timer;
 import flixel.addons.text.FlxTypeText;
@@ -96,7 +97,7 @@ class Dialogue extends FlxSpriteGroup
 	public function new(_numberOfLines:Int = 3, _fontSize:Int = 8, ?_font:String)
 	{
 		super();
-		paddingText = 4;
+		paddingText = 6;
 		alignY = "bottom";
 		
 		numberOfLines = _numberOfLines;
@@ -118,14 +119,14 @@ class Dialogue extends FlxSpriteGroup
 		
 		// -- Create a basic background
 		var bgBox = new FlxSprite(0, 0);
-			bgBox.makeGraphic(WIDTH, HEIGHT, FlxColor.RED);
-			bgBox.alpha = 0.9;
+			bgBox = FlxGradient.createGradientFlxSprite(WIDTH, HEIGHT, [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
+			bgBox.alpha = 0.75;
 			add(bgBox);
-		
+			
 		// -- Create the AutoTypers
 		lines = [];
 		for (i in 0...numberOfLines) {
-			lines[i] = new FlxTypeText(paddingText, (paddingText/2) + i * (_fontSize + paddingText),WIDTH - (paddingText * 2), "blah blah blah", _fontSize	);
+			lines[i] = new FlxTypeText(paddingText * 40, (paddingText/2) + i * (_fontSize + paddingText),WIDTH - (paddingText * 2), "blah blah blah", _fontSize	);
 			if (_font != null) {
 				lines[i].font = _font;
 			}
