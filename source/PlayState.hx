@@ -18,6 +18,8 @@ class PlayState extends FlxState
 	
 	private var _electronImage:FlxSprite;
 	
+	private var _choices:Choices;
+	
 	override public function create():Void
 	{
 		var bg:FlxSprite;
@@ -47,6 +49,10 @@ class PlayState extends FlxState
 		add(_nameTag);
 		
 		add(_player);
+		
+		_choices = new Choices();
+		add(_choices);
+		_choices._newChoices(2, ["choice 1", "choice22"]);
 		
 		super.create();
 	}
