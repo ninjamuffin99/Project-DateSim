@@ -22,14 +22,14 @@ class Choices extends FlxSpriteGroup
 		var choiceNum = [];
 		for (i in 0...choices)
 		{
-			choiceNum[i] = new FlxButton(FlxG.width /2, i * 100, wordsChoices[i], clickChoice(i));
+			choiceNum[i] = new FlxButton(FlxG.width /2, i * 100, wordsChoices[i], clickChoice);
 			add(choiceNum[i]);
 		}
 	}
 	
-	private function clickChoice(testNum:Int):Void
+	private function clickChoice():Void
 	{
-		FlxG.log.add(testNum);
+		FlxG.log.add("lol");
 	}
 	
 }
