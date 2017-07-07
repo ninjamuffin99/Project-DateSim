@@ -17,12 +17,13 @@ class Choices extends FlxSpriteGroup
 	//}
 	//
 	
-	public function _newChoices(choices:Int = 2, wordsChoices:Array<String>):Void
+	public function _newChoices(wordsChoices:Array<String>):Void
 	{
 		var choiceNum = [];
-		for (i in 0...choices)
+		for (i in 0...wordsChoices.length)
 		{
-			choiceNum[i] = new FlxButton(FlxG.width /2, i * 100, wordsChoices[i], clickChoice);
+			var choices:Int = wordsChoices.length;
+			choiceNum[i] = new FlxButton(0, ((FlxG.height * i) / (choices + 4)) + (FlxG.height / 5), wordsChoices[i], clickChoice);
 			add(choiceNum[i]);
 		}
 	}

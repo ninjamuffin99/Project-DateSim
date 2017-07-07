@@ -52,7 +52,8 @@ class PlayState extends FlxState
 		
 		_choices = new Choices();
 		add(_choices);
-		_choices._newChoices(2, ["choice 1", "choice22"]);
+		_choices._newChoices(["choice 1", "choice22"]);
+		_choices.screenCenter(X);
 		
 		super.create();
 	}
