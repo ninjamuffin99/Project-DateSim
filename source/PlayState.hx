@@ -22,6 +22,12 @@ class PlayState extends FlxState
 	
 	override public function create():Void
 	{
+		FlxG.save.bind("File1");
+		StatsBase.load();
+		
+		FlxG.log.add(StatsBase._dates);
+		FlxG.log.add(StatsBase._attraction);
+		
 		var bg:FlxSprite;
 		bg = new FlxSprite();
 		bg.makeGraphic(FlxG.width, FlxG.height);
@@ -64,7 +70,11 @@ class PlayState extends FlxState
 			_dialogueStart(["You just pressed R!", "Press E to make me go :("], true, "Electron", _electronImage);
 		if (FlxG.keys.justPressed.E)
 			_tweening(_electronImage, false);
-			
+		if (FlxG.keys.justPressed.Q)
+		{
+			StatsBase._attraction += 1;
+			StatsBase.save();
+		}
 		super.update(elapsed);
 	}
 	
