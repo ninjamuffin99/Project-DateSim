@@ -2,6 +2,7 @@ package;
 
 import flixel.FlxG;
 import flixel.group.FlxSpriteGroup;
+import flixel.tweens.FlxTween;
 import flixel.ui.FlxButton;
 
 /**
@@ -19,6 +20,7 @@ class Choices extends FlxSpriteGroup
 	
 	public function _newChoices(wordsChoices:Array<String>):Void
 	{
+		
 		var choiceNum = [];
 		for (i in 0...wordsChoices.length)
 		{

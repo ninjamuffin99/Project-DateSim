@@ -8,7 +8,10 @@ class Story
 {
 	//just a big ol thing to hold dialogue!!
 	public static var intro:Array<String> = 
-	["bullshit", "more stuff!!"];
+	[
+	"bullshit", 
+	"more stuff!!"
+	];
 	
 	
 }

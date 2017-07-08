@@ -4,6 +4,8 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup;
 import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxDestroyUtil;
 import flixel.util.FlxGradient;
@@ -120,7 +122,7 @@ class Dialogue extends FlxSpriteGroup
 		// -- Create a basic background
 		var bgBox = new FlxSprite(0, 0);
 			bgBox = FlxGradient.createGradientFlxSprite(WIDTH, HEIGHT, [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
-			bgBox.alpha = 0.75;
+			bgBox.alpha = 0;
 			add(bgBox);
 			
 		// -- Create the AutoTypers
@@ -142,6 +144,8 @@ class Dialogue extends FlxSpriteGroup
 		updateCursor();
 		cursor.alignment = "right";
 		add(cursor);
+		
+		FlxTween.tween(bgBox, {alpha: 0.7}, 0.7, { ease: FlxEase.quadInOut});
 	}//---------------------------------------------------;
 
 	override public function destroy():Void 
