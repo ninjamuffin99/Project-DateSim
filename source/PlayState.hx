@@ -70,11 +70,9 @@ class PlayState extends FlxState
 			_dialogueStart(["You just pressed R!", "Press E to make me go :("], true, "Electron", _electronImage);
 		if (FlxG.keys.justPressed.E)
 			_tweening(_electronImage, false);
+			
 		if (FlxG.keys.justPressed.Q)
-		{
-			StatsBase._attraction += 1;
-			StatsBase.save();
-		}
+			_dialogueStart(Story.intro);
 		super.update(elapsed);
 	}
 	
