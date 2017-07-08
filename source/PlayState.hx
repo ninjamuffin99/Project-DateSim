@@ -75,6 +75,8 @@ class PlayState extends FlxState
 			
 		if (FlxG.keys.justPressed.Q)
 			_dialogueStart(Story.intro);
+		if (FlxG.keys.justPressed.F)
+			exit();
 		super.update(elapsed);
 	}
 	
@@ -89,7 +91,7 @@ class PlayState extends FlxState
 		_tweening(_imageTween, true);
 	}
 	
-	public function _tweening(_image:FlxSprite, tweenIn:Bool = true)
+	public function _tweening(_image:FlxSprite, tweenIn:Bool = true):Void
 	{
 		if (tweenIn)
 		{
@@ -100,5 +102,10 @@ class PlayState extends FlxState
 		{
 			FlxTween.tween(_image, { x: 0 - _image.width}, 0.75, {ease: FlxEase.backIn});
 		}
+	}
+	public function exit():Void
+	{
+		var exitTHing:Int = 30 - Std.int(_dialogue.height);
+		FlxTween.tween(_dialogue, { y : exitTHing, alpha: 0}, 0.6, { ease: FlxEase.cubeInOut});
 	}
 }
