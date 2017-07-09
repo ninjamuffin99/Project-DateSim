@@ -60,7 +60,7 @@ class PlayState extends FlxState
 		
 		_choices = new Choices();
 		add(_choices);
-		_choices._newChoices(["choice 1", "choice22"]);
+		_choices._newChoices(["choice 1", "choice22"], choiceTest, this);
 		_choices.screenCenter(X);
 		
 		super.create();
@@ -107,5 +107,10 @@ class PlayState extends FlxState
 	{
 		var exitTHing:Int = 30 - Std.int(_dialogue.height);
 		FlxTween.tween(_dialogue, { y : exitTHing, alpha: 0}, 0.6, { ease: FlxEase.cubeInOut});
+	}
+	
+	public function choiceTest(_choice:Int):Void
+	{
+		FlxG.log.add(_choice);
 	}
 }
