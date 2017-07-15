@@ -31,6 +31,8 @@ class Choices extends FlxSpriteGroup
 			add(choiceNum[i]);
 			choiceNum[i].makeGraphic(Std.int(FlxG.width * 0.60), 40, FlxColor.RED);
 			choiceNum[i].label.size = 0;
+			choiceNum[i].alpha = 0;
+			FlxTween.tween(choiceNum[i], {alpha: 1}, 0.4, {ease:FlxEase.quadOut, startDelay: i * 0.05});
 			FlxTween.tween(choiceNum[i].label, {size: 23}, 0.4, { ease: FlxEase.backOut, startDelay: i * 0.05});
 		}
 		
