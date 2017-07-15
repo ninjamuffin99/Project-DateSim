@@ -25,10 +25,11 @@ class Choices extends FlxSpriteGroup
 			var choices:Int = wordsChoices.length;
 			choiceNum[i] = new FlxButton(0, ((FlxG.height * i) / (choices + 4)) + (FlxG.height / 5), wordsChoices[i], function()
 			{
-				FlxTween.tween(this, {alpha: 0, y: this.y - 10}, 0.4, {ease: FlxEase.quartOut} );
+				FlxTween.tween(this, {alpha: 0, y: this.y - 10}, 0.4, {ease: FlxEase.quartOut});
 			});
 			
 			add(choiceNum[i]);
+			
 			choiceNum[i].makeGraphic(Std.int(FlxG.width * 0.60), 40, FlxColor.RED);
 			choiceNum[i].label.size = 0;
 			choiceNum[i].alpha = 0;

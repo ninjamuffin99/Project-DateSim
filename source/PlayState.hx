@@ -11,7 +11,6 @@ import flixel.util.FlxGradient;
 
 class PlayState extends FlxState
 {
-	private var _player:Player;
 	private var _dialogue:Dialogue;
 	private var _nameTag:FlxText;
 	private var _nameTextBox:FlxSprite;
@@ -33,12 +32,14 @@ class PlayState extends FlxState
 		bg.makeGraphic(FlxG.width, FlxG.height);
 		add(bg);
 		
-		_player = new Player(30, 60);
+		
 		_dialogue = new Dialogue(4, 24, "assets/data/typo_round/Typo_Round_Regular_Demo.otf");
 		
 		_nameTag = new FlxText(_dialogue.x + 70, _dialogue.y + 100, 0 , "", 18);
-		_nameTextBox = new FlxSprite(_nameTag.x - 5, _nameTag.y - 5);
 		
+		_nameTextBox = new FlxSprite(_nameTag.x - 5, _nameTag.y - 5);
+		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
+		_nameTextBox.alpha = 0;
 		
 		_electronImage = new FlxSprite();
 		_electronImage.loadGraphic("assets/images/concept/electron_blush.jpg", false, 474, 428);
@@ -55,8 +56,6 @@ class PlayState extends FlxState
 		
 		_nameTag.text = "Press R to test the something??";
 		add(_nameTag);
-		
-		add(_player);
 		
 		_choices = new Choices();
 		add(_choices);
@@ -87,7 +86,10 @@ class PlayState extends FlxState
 		//_nameTextBox.makeGraphic(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), FlxColor.BLUE);
 		
 		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
-		
+		if (_name != "")
+			_nameTextBox.alpha = 1;
+		else
+			_nameTextBox.alpha = 0;
 		_tweening(_imageTween, true);
 	}
 	
