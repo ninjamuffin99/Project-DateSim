@@ -1,11 +1,14 @@
 package;
 
 import flixel.FlxG;
+import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxSpriteGroup;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxButton;
+import flixel.util.FlxColor;
+import flixel.util.FlxGradient;
 
 /**
  * ...
@@ -13,11 +16,10 @@ import flixel.ui.FlxButton;
  */
 class Choices extends FlxSpriteGroup 
 {
-
+	private var choiceNum = [];
 	public function _newChoices(wordsChoices:Array<String>):Void
 	{
 		
-		var choiceNum = [];
 		for (i in 0...wordsChoices.length)
 		{
 			var choices:Int = wordsChoices.length;
@@ -27,7 +29,9 @@ class Choices extends FlxSpriteGroup
 			});
 			
 			add(choiceNum[i]);
-			
+			choiceNum[i].makeGraphic(Std.int(FlxG.width * 0.60), 40, FlxColor.RED);
+			choiceNum[i].label.size = 0;
+			FlxTween.tween(choiceNum[i].label, {size: 23}, 0.4, { ease: FlxEase.backOut, startDelay: i * 0.05});
 		}
 		
 		this.y = this.y + 10;

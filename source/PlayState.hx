@@ -60,7 +60,7 @@ class PlayState extends FlxState
 		
 		_choices = new Choices();
 		add(_choices);
-		_choices._newChoices(["choice 1", "choice22"]);
+		_choices._newChoices(["HEre uis one choice!!", "and here is another!!! OWOW"]);
 		_choices.screenCenter(X);
 		
 		super.create();
