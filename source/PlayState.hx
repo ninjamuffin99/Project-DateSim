@@ -83,13 +83,14 @@ class PlayState extends FlxState
 	{
 		_dialogue.setDialog(words, autostart);
 		_nameTag.text = _name;
-		//_nameTextBox.makeGraphic(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), FlxColor.BLUE);
 		
+		//maybe change this so the graphics are different?
 		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
 		if (_name != "")
 			_nameTextBox.alpha = 1;
 		else
 			_nameTextBox.alpha = 0;
+		
 		_tweening(_imageTween, true);
 	}
 	
