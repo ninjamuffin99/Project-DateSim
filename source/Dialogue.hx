@@ -3,6 +3,7 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup;
+import flixel.system.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -161,7 +162,7 @@ class Dialogue extends FlxSpriteGroup
 	 * @param	dialogArray An array containing the dialog lines.
 	 * @param   autoStart , if false will not autostart the new dialog, use start();
 	 */
-	public function setDialog(dialogArray:Array<String>, autoStart:Bool = true )
+	public function setDialog(dialogArray:Array<String>, autoStart:Bool = true, sound:String = null)
 	{
 		// Note to self:
 		// Don't pre-process the data to fit long lines etc. User should do that.
@@ -169,6 +170,14 @@ class Dialogue extends FlxSpriteGroup
 		queue = dialogArray.copy();
 		
 		lineToFeed = 0;
+		
+		if (sound != null)
+		{
+			var VO:FlxSound = new FlxSound();
+			VO.loadStream(sound);
+			//[1] is a placeholder but for all i know it could work perfectly
+			lines[1].sounds = [VO];
+		}
 		
 		// Reset timer and unpause Just In Case
 		pauseTimer.cancel();

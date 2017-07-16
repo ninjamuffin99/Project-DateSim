@@ -81,7 +81,8 @@ class PlayState extends FlxState
 	
 	public function _dialogueStart(words:Array<String>, autostart:Bool = true, _name:String = "", _imageTween:FlxSprite = null)
 	{
-		_dialogue.setDialog(words, autostart);
+		//change this to an MP3 when possible to test! also maybe make it an array?
+		_dialogue.setDialog(words, autostart, "assets/sounds/VoiceClips/Electron/electronVO.ogg");
 		_nameTag.text = _name;
 		
 		//maybe change this so the graphics are different?

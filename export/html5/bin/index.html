@@ -11,6 +11,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	
 	
+	<script type="text/javascript" src="./lib/webgl-debug.js"></script>
 	<script type="text/javascript" src="./lib/soundjs.min.js"></script>
 	<script type="text/javascript" src="./DateSim.js"></script>
 	
@@ -24,8 +25,80 @@
 	
 	<style>
 		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: black; }
-		#openfl-content { margin: 0 auto; width: 640px; height: 480px; }
+		#openfl-content { margin: 0 auto; width: 1280px; height: 720px; }
 		
+		@font-face {
+			font-family: 'Typo Round Bold Demo';
+			src: url('assets/data/typo_round/Typo_Round_Bold_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Bold_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Bold_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Bold_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Bold Italic Demo';
+			src: url('assets/data/typo_round/Typo_Round_Bold_Italic_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Bold_Italic_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Bold_Italic_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Bold_Italic_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Italic Demo';
+			src: url('assets/data/typo_round/Typo_Round_Italic_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Italic_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Italic_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Italic_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Light Demo';
+			src: url('assets/data/typo_round/Typo_Round_Light_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Light_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Light_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Light_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Light Italic Demo';
+			src: url('assets/data/typo_round/Typo_Round_Light_Italic_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Light_Italic_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Light_Italic_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Light_Italic_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Regular Demo';
+			src: url('assets/data/typo_round/Typo_Round_Regular_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Regular_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Regular_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Regular_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Thin Demo';
+			src: url('assets/data/typo_round/Typo_Round_Thin_Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Thin_Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Thin_Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Thin_Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Typo Round Thin Italic Demo';
+			src: url('assets/data/typo_round/Typo_Round_Thin_Italic Demo.eot');
+			src: url('assets/data/typo_round/Typo_Round_Thin_Italic Demo.eot?#iefix') format('embedded-opentype'),
+			url('assets/data/typo_round/Typo_Round_Thin_Italic Demo.svg#my-font-family') format('svg'),
+			url('assets/data/typo_round/Typo_Round_Thin_Italic Demo.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
 		@font-face {
 			font-family: 'Nokia Cellphone FC Small';
 			src: url('flixel/fonts/nokiafc22.eot');
@@ -54,7 +127,7 @@
 	<div id="openfl-content"></div>
 	
 	<script type="text/javascript">
-		lime.embed ("openfl-content", 640, 480, "000000");
+		lime.embed ("openfl-content", 1280, 720, "000000");
 	</script>
 	
 </body>

@@ -55,6 +55,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_bold_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_bold_italic_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_italic_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_light_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_light_italic_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_regular_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_thin_demo_otf);
+		openfl.text.Font.registerFont (__ASSET__OPENFL__assets_data_typo_round_typo_round_thin_italic_demo_otf);
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -79,6 +95,30 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/data/typo_round/Read_Me.txt", __ASSET__assets_data_typo_round_read_me_txt);
+		type.set ("assets/data/typo_round/Read_Me.txt", AssetType.TEXT);
+		className.set ("assets/data/typo_round/Typo Round test screen.url", __ASSET__assets_data_typo_round_typo_round_test_screen_url);
+		type.set ("assets/data/typo_round/Typo Round test screen.url", AssetType.TEXT);
+		className.set ("assets/data/typo_round/typo_round_1024.png", __ASSET__assets_data_typo_round_typo_round_1024_png);
+		type.set ("assets/data/typo_round/typo_round_1024.png", AssetType.IMAGE);
+		className.set ("assets/data/typo_round/Typo_Round_Bold_Demo.otf", __ASSET__assets_data_typo_round_typo_round_bold_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Bold_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Italic_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Light_Demo.otf", __ASSET__assets_data_typo_round_typo_round_light_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Light_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Regular_Demo.otf", __ASSET__assets_data_typo_round_typo_round_regular_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Regular_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Thin_Demo.otf", __ASSET__assets_data_typo_round_typo_round_thin_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Thin_Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf", __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf", AssetType.FONT);
+		className.set ("assets/data/typo_round.zip", __ASSET__assets_data_typo_round_zip);
+		type.set ("assets/data/typo_round.zip", AssetType.BINARY);
 		className.set ("assets/images/concept/branching_pathsmaybe.jpg", __ASSET__assets_images_concept_branching_pathsmaybe_jpg);
 		type.set ("assets/images/concept/branching_pathsmaybe.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/characters_or_whatever.jpg", __ASSET__assets_images_concept_characters_or_whatever_jpg);
@@ -105,8 +145,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
 		className.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3);
 		type.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/jingle.mp3", __ASSET__assets_sounds_jingle_mp3);
+		type.set ("assets/sounds/jingle.mp3", AssetType.MUSIC);
+		className.set ("assets/sounds/jingle.ogg", __ASSET__assets_sounds_jingle_ogg);
+		type.set ("assets/sounds/jingle.ogg", AssetType.SOUND);
+		className.set ("assets/sounds/jingle.wav", __ASSET__assets_sounds_jingle_wav);
+		type.set ("assets/sounds/jingle.wav", AssetType.SOUND);
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		className.set ("assets/sounds/VoiceClips/Electron/electronVO.ogg", __ASSET__assets_sounds_voiceclips_electron_electronvo_ogg);
+		type.set ("assets/sounds/VoiceClips/Electron/electronVO.ogg", AssetType.SOUND);
 		className.set ("flixel/sounds/beep.ogg", __ASSET__flixel_sounds_beep_ogg);
 		type.set ("flixel/sounds/beep.ogg", AssetType.SOUND);
 		className.set ("flixel/sounds/flixel.ogg", __ASSET__flixel_sounds_flixel_ogg);
@@ -128,6 +176,54 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/data/typo_round/Read_Me.txt";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/typo_round/Typo Round test screen.url";
+		path.set (id, id);
+		
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/typo_round/typo_round_1024.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/data/typo_round/Typo_Round_Bold_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_bold_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Italic_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_italic_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Light_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_light_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Regular_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_regular_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Thin_Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_thin_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf";
+		className.set (id, __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf);
+		
+		type.set (id, AssetType.FONT);
+		id = "assets/data/typo_round.zip";
+		path.set (id, id);
+		
+		type.set (id, AssetType.BINARY);
 		id = "assets/images/concept/branching_pathsmaybe.jpg";
 		path.set (id, id);
 		
@@ -180,10 +276,26 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/jingle.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
+		id = "assets/sounds/jingle.ogg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
+		id = "assets/sounds/jingle.wav";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		id = "assets/sounds/sounds-go-here.txt";
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/sounds/VoiceClips/Electron/electronVO.ogg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.SOUND);
 		id = "flixel/sounds/beep.ogg";
 		path.set (id, id);
 		
@@ -229,6 +341,42 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/data/data-goes-here.txt", __ASSET__assets_data_data_goes_here_txt);
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		
+		className.set ("assets/data/typo_round/Read_Me.txt", __ASSET__assets_data_typo_round_read_me_txt);
+		type.set ("assets/data/typo_round/Read_Me.txt", AssetType.TEXT);
+		
+		className.set ("assets/data/typo_round/Typo Round test screen.url", __ASSET__assets_data_typo_round_typo_round_test_screen_url);
+		type.set ("assets/data/typo_round/Typo Round test screen.url", AssetType.TEXT);
+		
+		className.set ("assets/data/typo_round/typo_round_1024.png", __ASSET__assets_data_typo_round_typo_round_1024_png);
+		type.set ("assets/data/typo_round/typo_round_1024.png", AssetType.IMAGE);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Bold_Demo.otf", __ASSET__assets_data_typo_round_typo_round_bold_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Bold_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Italic_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Light_Demo.otf", __ASSET__assets_data_typo_round_typo_round_light_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Light_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf", __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Regular_Demo.otf", __ASSET__assets_data_typo_round_typo_round_regular_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Regular_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Thin_Demo.otf", __ASSET__assets_data_typo_round_typo_round_thin_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Thin_Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf", __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf);
+		type.set ("assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf", AssetType.FONT);
+		
+		className.set ("assets/data/typo_round.zip", __ASSET__assets_data_typo_round_zip);
+		type.set ("assets/data/typo_round.zip", AssetType.BINARY);
+		
 		className.set ("assets/images/concept/branching_pathsmaybe.jpg", __ASSET__assets_images_concept_branching_pathsmaybe_jpg);
 		type.set ("assets/images/concept/branching_pathsmaybe.jpg", AssetType.IMAGE);
 		
@@ -268,8 +416,20 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3);
 		type.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", AssetType.MUSIC);
 		
+		className.set ("assets/sounds/jingle.mp3", __ASSET__assets_sounds_jingle_mp3);
+		type.set ("assets/sounds/jingle.mp3", AssetType.MUSIC);
+		
+		className.set ("assets/sounds/jingle.ogg", __ASSET__assets_sounds_jingle_ogg);
+		type.set ("assets/sounds/jingle.ogg", AssetType.SOUND);
+		
+		className.set ("assets/sounds/jingle.wav", __ASSET__assets_sounds_jingle_wav);
+		type.set ("assets/sounds/jingle.wav", AssetType.SOUND);
+		
 		className.set ("assets/sounds/sounds-go-here.txt", __ASSET__assets_sounds_sounds_go_here_txt);
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/sounds/VoiceClips/Electron/electronVO.ogg", __ASSET__assets_sounds_voiceclips_electron_electronvo_ogg);
+		type.set ("assets/sounds/VoiceClips/Electron/electronVO.ogg", AssetType.SOUND);
 		
 		className.set ("flixel/sounds/beep.ogg", __ASSET__flixel_sounds_beep_ogg);
 		type.set ("flixel/sounds/beep.ogg", AssetType.SOUND);
@@ -934,6 +1094,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if flash
 
 @:keep @:bind #if display private #end class __ASSET__assets_data_data_goes_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_read_me_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_test_screen_url extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_1024_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_italic_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_regular_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_zip extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_branching_pathsmaybe_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_characters_or_whatever_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_electron_blush_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -947,7 +1119,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_tease_gif extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3 extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_jingle_mp3 extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_jingle_ogg extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_jingle_wav extends null { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends null { }
+@:keep @:bind #if display private #end class __ASSET__assets_sounds_voiceclips_electron_electronvo_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -957,6 +1133,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
+
+
+
+
+
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Bold Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Bold Italic Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_italic_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Italic Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Light Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Light Italic Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_regular_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Regular Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Thin Demo"; } } 
+@:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Thin Italic Demo"; } } 
+
+
+
 
 
 
@@ -989,6 +1181,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:file("assets/data/data-goes-here.txt") #if display private #end class __ASSET__assets_data_data_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/data/typo_round/Read_Me.txt") #if display private #end class __ASSET__assets_data_typo_round_read_me_txt extends lime.utils.Bytes {}
+@:file("assets/data/typo_round/Typo Round test screen.url") #if display private #end class __ASSET__assets_data_typo_round_typo_round_test_screen_url extends lime.utils.Bytes {}
+@:image("assets/data/typo_round/typo_round_1024.png") #if display private #end class __ASSET__assets_data_typo_round_typo_round_1024_png extends lime.graphics.Image {}
+@:font("assets/data/typo_round/Typo_Round_Bold_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Bold_Italic_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Italic_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_italic_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Light_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Light_Italic_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Regular_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_regular_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Thin_Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_demo_otf extends lime.text.Font {}
+@:font("assets/data/typo_round/Typo_Round_Thin_Italic Demo.otf") #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf extends lime.text.Font {}
+@:file("assets/data/typo_round.zip") #if display private #end class __ASSET__assets_data_typo_round_zip extends lime.utils.Bytes {}
 @:image("assets/images/concept/branching_pathsmaybe.jpg") #if display private #end class __ASSET__assets_images_concept_branching_pathsmaybe_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/characters_or_whatever.jpg") #if display private #end class __ASSET__assets_images_concept_characters_or_whatever_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/electron_blush.jpg") #if display private #end class __ASSET__assets_images_concept_electron_blush_jpg extends lime.graphics.Image {}
@@ -1002,13 +1206,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("assets/images/tease.gif") #if display private #end class __ASSET__assets_images_tease_gif extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
 @:file("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3") #if display private #end class __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/jingle.mp3") #if display private #end class __ASSET__assets_sounds_jingle_mp3 extends lime.utils.Bytes {}
+@:file("assets/sounds/jingle.ogg") #if display private #end class __ASSET__assets_sounds_jingle_ogg extends lime.utils.Bytes {}
+@:file("assets/sounds/jingle.wav") #if display private #end class __ASSET__assets_sounds_jingle_wav extends lime.utils.Bytes {}
 @:file("assets/sounds/sounds-go-here.txt") #if display private #end class __ASSET__assets_sounds_sounds_go_here_txt extends lime.utils.Bytes {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.Bytes {}
-@:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/sounds/flixel.ogg") #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends lime.utils.Bytes {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
-@:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/fonts/monsterrat.ttf") #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font {}
-@:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/images/ui/button.png") #if display private #end class __ASSET__flixel_images_ui_button_png extends lime.graphics.Image {}
-@:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,1/assets/images/logo/default.png") #if display private #end class __ASSET__flixel_images_logo_default_png extends lime.graphics.Image {}
+@:file("assets/sounds/VoiceClips/Electron/electronVO.ogg") #if display private #end class __ASSET__assets_sounds_voiceclips_electron_electronvo_ogg extends lime.utils.Bytes {}
+@:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/beep.ogg") #if display private #end class __ASSET__flixel_sounds_beep_ogg extends lime.utils.Bytes {}
+@:file("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/sounds/flixel.ogg") #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends lime.utils.Bytes {}
+@:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/fonts/nokiafc22.ttf") #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font {}
+@:font("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/fonts/monsterrat.ttf") #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font {}
+@:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/images/ui/button.png") #if display private #end class __ASSET__flixel_images_ui_button_png extends lime.graphics.Image {}
+@:image("C:/HaxeToolkit/haxe/lib/flixel/4,2,0/assets/images/logo/default.png") #if display private #end class __ASSET__flixel_images_logo_default_png extends lime.graphics.Image {}
 
 
 
@@ -1016,6 +1224,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 #end
 
 #if (openfl && !flash)
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_bold_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_bold_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_bold_italic_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_bold_italic_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_italic_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_italic_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_light_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_light_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_light_italic_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_light_italic_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_regular_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_regular_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_thin_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_thin_demo_otf (); src = font.src; name = font.name; super (); }}
+@:keep #if display private #end class __ASSET__OPENFL__assets_data_typo_round_typo_round_thin_italic_demo_otf extends openfl.text.Font { public function new () { var font = new __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_nokiafc22_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_nokiafc22_ttf (); src = font.src; name = font.name; super (); }}
 @:keep #if display private #end class __ASSET__OPENFL__flixel_fonts_monsterrat_ttf extends openfl.text.Font { public function new () { var font = new __ASSET__flixel_fonts_monsterrat_ttf (); src = font.src; name = font.name; super (); }}
 

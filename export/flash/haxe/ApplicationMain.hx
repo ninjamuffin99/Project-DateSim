@@ -134,8 +134,24 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.MUSIC);
 		
 		
+		urls.push ("assets/sounds/jingle.mp3");
+		types.push (lime.Assets.AssetType.MUSIC);
+		
+		
+		urls.push ("assets/sounds/jingle.ogg");
+		types.push (lime.Assets.AssetType.SOUND);
+		
+		
+		urls.push ("assets/sounds/jingle.wav");
+		types.push (lime.Assets.AssetType.SOUND);
+		
+		
 		urls.push ("assets/sounds/sounds-go-here.txt");
 		types.push (lime.Assets.AssetType.TEXT);
+		
+		
+		urls.push ("assets/sounds/VoiceClips/Electron/electronVO.ogg");
+		types.push (lime.Assets.AssetType.SOUND);
 		
 		
 		urls.push ("flixel/sounds/beep.mp3");
@@ -223,7 +239,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "245",
+			build: "251",
 			company: "",
 			file: "DateSim",
 			fps: 60,
