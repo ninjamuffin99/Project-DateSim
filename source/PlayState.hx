@@ -97,12 +97,10 @@ class PlayState extends FlxState
 		super.update(elapsed);
 	}
 	
-	public function _dialogueStart(words:Array<String>, autostart:Bool = true, _name:String = "", _imageTween:FlxSprite = null)
+	public function _dialogueStart(words:Array<String>, autostart:Bool = true, _name:String = "")
 	{
 		_dialogue.setDialog(words, autostart);
 		_nameTag.text = _name;
-		if (_imageTween == null)
-			_imageTween = _dummyImage;
 		
 		//maybe change this so the graphics are different?
 		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
@@ -111,7 +109,7 @@ class PlayState extends FlxState
 		else
 			_nameTextBox.alpha = 0;
 		
-		_tweening(_imageTween, true);
+		//_tweening(_imageTween, true);
 	}
 	
 	public function _tweening(_image:FlxSprite, tweenIn:Bool = true):Void

@@ -171,16 +171,6 @@ class Dialogue extends FlxSpriteGroup
 		
 		lineToFeed = 0;
 		
-		/*
-		if (sound != null)
-		{
-			var VO:FlxSound = new FlxSound();
-			VO.loadStream(sound);
-			//[1] is a placeholder but for all i know it could work perfectly
-			lines[1].sounds = [VO];
-		}
-		*/
-		
 		// Reset timer and unpause Just In Case
 		pauseTimer.cancel();
 		isPaused = false;
