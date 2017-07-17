@@ -77,7 +77,7 @@ class PlayState extends FlxState
 			exit();
 			
 		//temp solution
-		if (FlxG.mouse.justReleased)
+		if (_choices._btnPressed)
 		{
 			if (_choices._getChoices() == 0)
 				FlxG.log.add("idk");
