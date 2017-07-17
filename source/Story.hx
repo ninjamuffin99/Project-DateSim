@@ -10,8 +10,9 @@ class Story
 	//i dont know how toprogram!!
 	public static var intro:Array<String> = 
 	[
-	"bullshit", 
-	"more stuff!!"
+		"Uhh hey there..", 
+		"Umm... How's it going?",
+		"I'm an electron, and you can call me that"
 	];
 	
 	

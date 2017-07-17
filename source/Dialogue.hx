@@ -162,7 +162,7 @@ class Dialogue extends FlxSpriteGroup
 	 * @param	dialogArray An array containing the dialog lines.
 	 * @param   autoStart , if false will not autostart the new dialog, use start();
 	 */
-	public function setDialog(dialogArray:Array<String>, autoStart:Bool = true, sound:String = null)
+	public function setDialog(dialogArray:Array<String>, autoStart:Bool = true)
 	{
 		// Note to self:
 		// Don't pre-process the data to fit long lines etc. User should do that.
@@ -171,6 +171,7 @@ class Dialogue extends FlxSpriteGroup
 		
 		lineToFeed = 0;
 		
+		/*
 		if (sound != null)
 		{
 			var VO:FlxSound = new FlxSound();
@@ -178,6 +179,7 @@ class Dialogue extends FlxSpriteGroup
 			//[1] is a placeholder but for all i know it could work perfectly
 			lines[1].sounds = [VO];
 		}
+		*/
 		
 		// Reset timer and unpause Just In Case
 		pauseTimer.cancel();

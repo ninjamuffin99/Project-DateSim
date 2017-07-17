@@ -17,6 +17,7 @@ class PlayState extends FlxState
 	private var _nameTextBox:FlxSprite;
 	
 	private var _electronImage:FlxSprite;
+	private var _dummyImage:FlxSprite;
 	
 	private var _choices:Choices;
 	
@@ -40,11 +41,16 @@ class PlayState extends FlxState
 		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
 		_nameTextBox.alpha = 0;
 		
+		
 		_electronImage = new FlxSprite();
 		_electronImage.loadGraphic("assets/images/concept/electron_blush.jpg", false, 474, 428);
 		_electronImage.x = 0 - _electronImage.width;
 		_electronImage.y = 150;
 		add(_electronImage);
+		
+		_dummyImage = new FlxSprite();
+		add(_dummyImage);
+		_dummyImage.x -= 30;
 		
 		add(_dialogue);
 		_dialogue.y = 30 - _dialogue.height;
@@ -53,12 +59,12 @@ class PlayState extends FlxState
 		
 		add(_nameTextBox);
 		
-		_nameTag.text = "Press R to test the something??";
+		//_nameTag.text = "Press R to test the something??";
 		add(_nameTag);
 		
 		_choices = new Choices();
 		add(_choices);
-		_choices._newChoices(["idid", "idk"]);
+		//_choices._newChoices(["idid", "idk"]);
 		_choices.screenCenter(X);
 		
 		super.create();
@@ -66,6 +72,8 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float):Void
 	{
+		//Various 'debug' things??
+		/*
 		if (FlxG.keys.justPressed.R)
 			_dialogueStart(["You just pressed R!", "Press E to make me go :("], true, "Electron", _electronImage);
 		if (FlxG.keys.justPressed.E)
@@ -75,9 +83,10 @@ class PlayState extends FlxState
 			_dialogueStart(Story.intro);
 		if (FlxG.keys.justPressed.F)
 			exit();
-			
+		*/
+		
 		//temp solution
-		if (_choices._btnPressed)
+		if ( _choices._btnPressed)
 		{
 			if (_choices._getChoices() == 0)
 				FlxG.log.add("idk");
@@ -90,9 +99,10 @@ class PlayState extends FlxState
 	
 	public function _dialogueStart(words:Array<String>, autostart:Bool = true, _name:String = "", _imageTween:FlxSprite = null)
 	{
-		//change this to an MP3 when possible to test! also maybe make it an array?
-		_dialogue.setDialog(words, autostart, "assets/sounds/VoiceClips/Electron/electronVO.ogg");
+		_dialogue.setDialog(words, autostart);
 		_nameTag.text = _name;
+		if (_imageTween == null)
+			_imageTween = _dummyImage;
 		
 		//maybe change this so the graphics are different?
 		_nameTextBox = FlxGradient.createGradientFlxSprite(Std.int(_nameTag.width + 10), Std.int(_nameTag.height + 10), [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
@@ -120,10 +130,5 @@ class PlayState extends FlxState
 	{
 		var exitTHing:Int = 30 - Std.int(_dialogue.height);
 		FlxTween.tween(_dialogue, { y : exitTHing, alpha: 0}, 0.6, { ease: FlxEase.cubeInOut});
-	}
-	
-	public function choiceTest(_choice:Int):Void
-	{
-		FlxG.log.add(_choice);
 	}
 }
