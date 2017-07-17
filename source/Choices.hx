@@ -17,8 +17,8 @@ import flixel.util.FlxGradient;
 class Choices extends FlxSpriteGroup 
 {
 	private var choiceNum = [];
-	private var choicePicked:Int;
-	public function _newChoices(wordsChoices:Array<String>):Int
+	public  var choicePicked:Int;
+	public function _newChoices(wordsChoices:Array<String>):Void
 	{
 		
 		for (i in 0...wordsChoices.length)
@@ -42,7 +42,10 @@ class Choices extends FlxSpriteGroup
 		
 		this.y = this.y + 10;
 		FlxTween.tween(this, {y: this.y -10}, 0.4, {ease: FlxEase.quartOut});
-		
+	}
+	
+	public function _getChoices():Int
+	{
 		return choicePicked;
 	}
 	

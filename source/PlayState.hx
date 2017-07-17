@@ -25,8 +25,6 @@ class PlayState extends FlxState
 		FlxG.save.bind("File1");
 		StatsBase.load();
 		
-		FlxG.log.add(StatsBase._dates);
-		FlxG.log.add(StatsBase._attraction);
 		
 		var bg:FlxSprite;
 		bg = new FlxSprite();
@@ -60,13 +58,7 @@ class PlayState extends FlxState
 		
 		_choices = new Choices();
 		add(_choices);
-		if (_choices._newChoices(["idk", "AHAH"]) == 0)
-			FlxG.log.add("AHAH");
-		else
-			FlxG.log.add("OAOAO");
-			
-		//FlxG.log.add(_choices._newChoices(["idid", "idk"]) + " 2 things in array");
-		//FlxG.log.add(_choices._newChoices(["idid", "idk", "AHAH"]) + " 3 things in array");
+		_choices._newChoices(["idid", "idk"]);
 		_choices.screenCenter(X);
 		
 		super.create();
@@ -83,6 +75,15 @@ class PlayState extends FlxState
 			_dialogueStart(Story.intro);
 		if (FlxG.keys.justPressed.F)
 			exit();
+			
+		//temp solution
+		if (FlxG.mouse.justReleased)
+		{
+			if (_choices._getChoices() == 0)
+				FlxG.log.add("idk");
+			else
+				FlxG.log.add("OAOAOAHAH");
+		}
 		
 		super.update(elapsed);
 	}
