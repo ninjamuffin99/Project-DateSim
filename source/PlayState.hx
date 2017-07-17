@@ -6,6 +6,7 @@ import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.ui.FlxButton;
 import flixel.util.FlxColor;
 import flixel.util.FlxGradient;
 
@@ -59,7 +60,13 @@ class PlayState extends FlxState
 		
 		_choices = new Choices();
 		add(_choices);
-		_choices._newChoices(["HEre uis one choice!!", "and here is another!!! OWOW"]);
+		if (_choices._newChoices(["idk", "AHAH"]) == 0)
+			FlxG.log.add("AHAH");
+		else
+			FlxG.log.add("OAOAO");
+			
+		//FlxG.log.add(_choices._newChoices(["idid", "idk"]) + " 2 things in array");
+		//FlxG.log.add(_choices._newChoices(["idid", "idk", "AHAH"]) + " 3 things in array");
 		_choices.screenCenter(X);
 		
 		super.create();
@@ -76,6 +83,7 @@ class PlayState extends FlxState
 			_dialogueStart(Story.intro);
 		if (FlxG.keys.justPressed.F)
 			exit();
+		
 		super.update(elapsed);
 	}
 	

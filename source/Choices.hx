@@ -17,7 +17,8 @@ import flixel.util.FlxGradient;
 class Choices extends FlxSpriteGroup 
 {
 	private var choiceNum = [];
-	public function _newChoices(wordsChoices:Array<String>):Void
+	private var choicePicked:Int;
+	public function _newChoices(wordsChoices:Array<String>):Int
 	{
 		
 		for (i in 0...wordsChoices.length)
@@ -26,6 +27,8 @@ class Choices extends FlxSpriteGroup
 			choiceNum[i] = new FlxButton(0, ((FlxG.height * i) / (choices + 4)) + (FlxG.height / 5), wordsChoices[i], function()
 			{
 				FlxTween.tween(this, {alpha: 0, y: this.y - 10}, 0.4, {ease: FlxEase.quartOut});
+				choicePicked = i;
+				FlxG.log.add(choicePicked);
 			});
 			
 			add(choiceNum[i]);
@@ -39,6 +42,8 @@ class Choices extends FlxSpriteGroup
 		
 		this.y = this.y + 10;
 		FlxTween.tween(this, {y: this.y -10}, 0.4, {ease: FlxEase.quartOut});
+		
+		return choicePicked;
 	}
 	
 	private function deadzo():Void
