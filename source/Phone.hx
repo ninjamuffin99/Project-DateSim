@@ -28,9 +28,12 @@ class Phone extends FlxSubState
 		
 		FlxTween.tween(_bg, { alpha: 0.5}, 0.3, {ease:FlxEase.quadOut});
 		
-		_phone = new FlxSprite(0, 0);
-		_phone.makeGraphic(133, 75, FlxColor.RED);
+		_phone = new FlxSprite(50, 0);
+		_phone.makeGraphic(400, 600, FlxColor.RED);
 		add(_phone);
+		_phone.y = FlxG.height;
+		
+		FlxTween.tween(_phone, {y:100}, 0.6, {ease:FlxEase.elasticOut});
 		
 		_timeStuff = new Time();
 		add(_timeStuff);
