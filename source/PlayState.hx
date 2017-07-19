@@ -20,7 +20,7 @@ class PlayState extends FlxState
 	private var _dummyImage:FlxSprite;
 	
 	private var _choices:Choices;
-	private var _hud:HUD;
+	private var _phone:Phone;
 	
 	override public function create():Void
 	{
@@ -66,18 +66,9 @@ class PlayState extends FlxState
 		_choices = new Choices();
 		_choices.screenCenter(X);
 		add(_choices);
-		//_choices._newChoices(["idid", "idk"]);
 		
-		/*
-		_hud = new HUD();
-		add(_hud);
-		var _hrBTN:FlxButton;
-		_hrBTN = new FlxButton(100, 500, "Press to advance 1 hr", function()
-		{
-			HUD.h += 1;
-		});
-		add(_hrBTN);
-		*/
+		_phone = new Phone();
+		add(_phone);
 		
 		super.create();
 	}
@@ -96,6 +87,8 @@ class PlayState extends FlxState
 		if (FlxG.keys.justPressed.F)
 			exit();
 		*/
+		if (FlxG.mouse.justPressedRight)
+			openSubState(_phone);
 		
 		//temp solution
 		if ( _choices._btnPressed)

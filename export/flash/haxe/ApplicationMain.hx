@@ -90,6 +90,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/concept/ElectricalPLug.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/concept/electron_blush.jpg");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -106,7 +110,27 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("assets/images/concept/Fate_Colored.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/fate_linework.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/fate_penguinIDKLOLOL.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/TheEnd_MoonKillEarth.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/concept/watermelon.jpg");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("assets/images/concept/watermelon_cheeky.jpg");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -239,7 +263,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "342",
+			build: "346",
 			company: "",
 			file: "DateSim",
 			fps: 60,

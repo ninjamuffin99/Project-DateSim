@@ -84,6 +84,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -123,6 +129,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/concept/branching_pathsmaybe.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/characters_or_whatever.jpg", __ASSET__assets_images_concept_characters_or_whatever_jpg);
 		type.set ("assets/images/concept/characters_or_whatever.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/ElectricalPLug.jpg", __ASSET__assets_images_concept_electricalplug_jpg);
+		type.set ("assets/images/concept/ElectricalPLug.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/electron_blush.jpg", __ASSET__assets_images_concept_electron_blush_jpg);
 		type.set ("assets/images/concept/electron_blush.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/electron_cheekyboy.jpg", __ASSET__assets_images_concept_electron_cheekyboy_jpg);
@@ -131,8 +139,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/concept/electron_silly.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/electron_strongboy.jpg", __ASSET__assets_images_concept_electron_strongboy_jpg);
 		type.set ("assets/images/concept/electron_strongboy.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/Fate_Colored.jpg", __ASSET__assets_images_concept_fate_colored_jpg);
+		type.set ("assets/images/concept/Fate_Colored.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/fate_linework.jpg", __ASSET__assets_images_concept_fate_linework_jpg);
+		type.set ("assets/images/concept/fate_linework.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/fate_penguinIDKLOLOL.jpg", __ASSET__assets_images_concept_fate_penguinidklolol_jpg);
+		type.set ("assets/images/concept/fate_penguinIDKLOLOL.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/TheEnd_MoonKillEarth.jpg", __ASSET__assets_images_concept_theend_moonkillearth_jpg);
+		type.set ("assets/images/concept/TheEnd_MoonKillEarth.jpg", AssetType.IMAGE);
 		className.set ("assets/images/concept/watermelon.jpg", __ASSET__assets_images_concept_watermelon_jpg);
 		type.set ("assets/images/concept/watermelon.jpg", AssetType.IMAGE);
+		className.set ("assets/images/concept/watermelon_cheeky.jpg", __ASSET__assets_images_concept_watermelon_cheeky_jpg);
+		type.set ("assets/images/concept/watermelon_cheeky.jpg", AssetType.IMAGE);
 		className.set ("assets/images/electron particle_v1.zip", __ASSET__assets_images_electron_particle_v1_zip);
 		type.set ("assets/images/electron particle_v1.zip", AssetType.BINARY);
 		className.set ("assets/images/electron_particle_v2.zip", __ASSET__assets_images_electron_particle_v2_zip);
@@ -232,6 +250,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/ElectricalPLug.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/concept/electron_blush.jpg";
 		path.set (id, id);
 		
@@ -248,7 +270,27 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/Fate_Colored.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/fate_linework.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/fate_penguinIDKLOLOL.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/TheEnd_MoonKillEarth.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/concept/watermelon.jpg";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/concept/watermelon_cheeky.jpg";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -383,6 +425,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/concept/characters_or_whatever.jpg", __ASSET__assets_images_concept_characters_or_whatever_jpg);
 		type.set ("assets/images/concept/characters_or_whatever.jpg", AssetType.IMAGE);
 		
+		className.set ("assets/images/concept/ElectricalPLug.jpg", __ASSET__assets_images_concept_electricalplug_jpg);
+		type.set ("assets/images/concept/ElectricalPLug.jpg", AssetType.IMAGE);
+		
 		className.set ("assets/images/concept/electron_blush.jpg", __ASSET__assets_images_concept_electron_blush_jpg);
 		type.set ("assets/images/concept/electron_blush.jpg", AssetType.IMAGE);
 		
@@ -395,8 +440,23 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("assets/images/concept/electron_strongboy.jpg", __ASSET__assets_images_concept_electron_strongboy_jpg);
 		type.set ("assets/images/concept/electron_strongboy.jpg", AssetType.IMAGE);
 		
+		className.set ("assets/images/concept/Fate_Colored.jpg", __ASSET__assets_images_concept_fate_colored_jpg);
+		type.set ("assets/images/concept/Fate_Colored.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/concept/fate_linework.jpg", __ASSET__assets_images_concept_fate_linework_jpg);
+		type.set ("assets/images/concept/fate_linework.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/concept/fate_penguinIDKLOLOL.jpg", __ASSET__assets_images_concept_fate_penguinidklolol_jpg);
+		type.set ("assets/images/concept/fate_penguinIDKLOLOL.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/concept/TheEnd_MoonKillEarth.jpg", __ASSET__assets_images_concept_theend_moonkillearth_jpg);
+		type.set ("assets/images/concept/TheEnd_MoonKillEarth.jpg", AssetType.IMAGE);
+		
 		className.set ("assets/images/concept/watermelon.jpg", __ASSET__assets_images_concept_watermelon_jpg);
 		type.set ("assets/images/concept/watermelon.jpg", AssetType.IMAGE);
+		
+		className.set ("assets/images/concept/watermelon_cheeky.jpg", __ASSET__assets_images_concept_watermelon_cheeky_jpg);
+		type.set ("assets/images/concept/watermelon_cheeky.jpg", AssetType.IMAGE);
 		
 		className.set ("assets/images/electron particle_v1.zip", __ASSET__assets_images_electron_particle_v1_zip);
 		type.set ("assets/images/electron particle_v1.zip", AssetType.BINARY);
@@ -1108,11 +1168,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_data_typo_round_zip extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_branching_pathsmaybe_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_characters_or_whatever_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_electricalplug_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_electron_blush_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_electron_cheekyboy_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_electron_silly_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_electron_strongboy_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_fate_colored_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_fate_linework_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_fate_penguinidklolol_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_theend_moonkillearth_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_concept_watermelon_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__assets_images_concept_watermelon_cheeky_jpg extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_images_electron_particle_v1_zip extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_electron_particle_v2_zip extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
@@ -1167,6 +1233,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
+
 @:keep #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends lime.text.Font { public function new () { super (); name = "Nokia Cellphone FC Small"; } } 
 @:keep #if display private #end class __ASSET__flixel_fonts_monsterrat_ttf extends lime.text.Font { public function new () { super (); name = "Monsterrat"; } } 
 
@@ -1195,11 +1267,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/data/typo_round.zip") #if display private #end class __ASSET__assets_data_typo_round_zip extends lime.utils.Bytes {}
 @:image("assets/images/concept/branching_pathsmaybe.jpg") #if display private #end class __ASSET__assets_images_concept_branching_pathsmaybe_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/characters_or_whatever.jpg") #if display private #end class __ASSET__assets_images_concept_characters_or_whatever_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/ElectricalPLug.jpg") #if display private #end class __ASSET__assets_images_concept_electricalplug_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/electron_blush.jpg") #if display private #end class __ASSET__assets_images_concept_electron_blush_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/electron_cheekyboy.jpg") #if display private #end class __ASSET__assets_images_concept_electron_cheekyboy_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/electron_silly.jpg") #if display private #end class __ASSET__assets_images_concept_electron_silly_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/electron_strongboy.jpg") #if display private #end class __ASSET__assets_images_concept_electron_strongboy_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/Fate_Colored.jpg") #if display private #end class __ASSET__assets_images_concept_fate_colored_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/fate_linework.jpg") #if display private #end class __ASSET__assets_images_concept_fate_linework_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/fate_penguinIDKLOLOL.jpg") #if display private #end class __ASSET__assets_images_concept_fate_penguinidklolol_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/TheEnd_MoonKillEarth.jpg") #if display private #end class __ASSET__assets_images_concept_theend_moonkillearth_jpg extends lime.graphics.Image {}
 @:image("assets/images/concept/watermelon.jpg") #if display private #end class __ASSET__assets_images_concept_watermelon_jpg extends lime.graphics.Image {}
+@:image("assets/images/concept/watermelon_cheeky.jpg") #if display private #end class __ASSET__assets_images_concept_watermelon_cheeky_jpg extends lime.graphics.Image {}
 @:file("assets/images/electron particle_v1.zip") #if display private #end class __ASSET__assets_images_electron_particle_v1_zip extends lime.utils.Bytes {}
 @:file("assets/images/electron_particle_v2.zip") #if display private #end class __ASSET__assets_images_electron_particle_v2_zip extends lime.utils.Bytes {}
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}

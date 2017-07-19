@@ -11,7 +11,7 @@ import flixel.util.FlxColor;
  * ...
  * @author 
  */
-class HUD extends FlxTypedGroup<FlxSprite>
+class Time extends FlxTypedGroup<FlxSprite>
 {
 	public static var yyyy:Int = 2017;
 	public static var mm:Int = 1;
