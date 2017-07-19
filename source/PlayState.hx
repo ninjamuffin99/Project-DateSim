@@ -20,6 +20,7 @@ class PlayState extends FlxState
 	private var _dummyImage:FlxSprite;
 	
 	private var _choices:Choices;
+	private var _hud:HUD;
 	
 	override public function create():Void
 	{
@@ -63,9 +64,18 @@ class PlayState extends FlxState
 		add(_nameTag);
 		
 		_choices = new Choices();
+		_choices.screenCenter(X);
 		add(_choices);
 		//_choices._newChoices(["idid", "idk"]);
-		_choices.screenCenter(X);
+		
+		_hud = new HUD();
+		add(_hud);
+		var _hrBTN:FlxButton;
+		_hrBTN = new FlxButton(100, 500, "Press to advance 1 hr", function()
+		{
+			HUD.h += 1;
+		});
+		add(_hrBTN);
 		
 		super.create();
 	}
