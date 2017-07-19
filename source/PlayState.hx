@@ -85,8 +85,8 @@ class PlayState extends FlxState
 		*/
 		if (FlxG.mouse.justPressedRight)
 		{
-			var _phone:Phone;
-			_phone = new Phone();
+			var _phone:Pause;
+			_phone = new Pause();
 			openSubState(_phone);
 		}
 		
