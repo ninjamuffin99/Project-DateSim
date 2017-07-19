@@ -68,6 +68,7 @@ class PlayState extends FlxState
 		add(_choices);
 		//_choices._newChoices(["idid", "idk"]);
 		
+		/*
 		_hud = new HUD();
 		add(_hud);
 		var _hrBTN:FlxButton;
@@ -76,6 +77,7 @@ class PlayState extends FlxState
 			HUD.h += 1;
 		});
 		add(_hrBTN);
+		*/
 		
 		super.create();
 	}
