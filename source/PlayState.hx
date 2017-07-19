@@ -20,7 +20,6 @@ class PlayState extends FlxState
 	private var _dummyImage:FlxSprite;
 	
 	private var _choices:Choices;
-	private var _phone:Phone;
 	
 	override public function create():Void
 	{
@@ -67,9 +66,6 @@ class PlayState extends FlxState
 		_choices.screenCenter(X);
 		add(_choices);
 		
-		_phone = new Phone();
-		add(_phone);
-		
 		super.create();
 	}
 
@@ -88,7 +84,11 @@ class PlayState extends FlxState
 			exit();
 		*/
 		if (FlxG.mouse.justPressedRight)
+		{
+			var _phone:Phone;
+			_phone = new Phone();
 			openSubState(_phone);
+		}
 		
 		//temp solution
 		if ( _choices._btnPressed)
