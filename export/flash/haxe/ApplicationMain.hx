@@ -154,6 +154,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.TEXT);
 		
 		
+		urls.push ("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3");
+		types.push (lime.Assets.AssetType.MUSIC);
+		
+		
 		urls.push ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3");
 		types.push (lime.Assets.AssetType.MUSIC);
 		
@@ -263,7 +267,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "372",
+			build: "386",
 			company: "",
 			file: "DateSim",
 			fps: 60,

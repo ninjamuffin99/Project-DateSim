@@ -10,6 +10,8 @@ import flixel.group.FlxSpriteGroup;
 class Phone extends FlxSpriteGroup 
 {
 	private var _bg:FlxSprite;
+	
+	//private var _btn
 	public function new() 
 	{
 		super();
@@ -17,6 +19,8 @@ class Phone extends FlxSpriteGroup
 		_bg = new FlxSprite();
 		_bg.makeGraphic(550, 660);
 		add(_bg);
+		
+		
 	}
 	
 }

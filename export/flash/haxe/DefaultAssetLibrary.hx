@@ -90,6 +90,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -161,6 +162,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/tease.gif", AssetType.IMAGE);
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		className.set ("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3", __ASSET__assets_music_potential_songs_737869_me_me_me_full_english_nikk_mp3);
+		type.set ("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3", AssetType.MUSIC);
 		className.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3);
 		type.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", AssetType.MUSIC);
 		className.set ("assets/sounds/jingle.mp3", __ASSET__assets_sounds_jingle_mp3);
@@ -314,6 +317,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.TEXT);
+		id = "assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3";
+		path.set (id, id);
+		
+		type.set (id, AssetType.MUSIC);
 		id = "assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3";
 		path.set (id, id);
 		
@@ -472,6 +479,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/music/music-goes-here.txt", __ASSET__assets_music_music_goes_here_txt);
 		type.set ("assets/music/music-goes-here.txt", AssetType.TEXT);
+		
+		className.set ("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3", __ASSET__assets_music_potential_songs_737869_me_me_me_full_english_nikk_mp3);
+		type.set ("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3", AssetType.MUSIC);
 		
 		className.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3);
 		type.set ("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3", AssetType.MUSIC);
@@ -1184,6 +1194,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__assets_images_images_go_here_txt extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__assets_images_tease_gif extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__assets_music_music_goes_here_txt extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__assets_music_potential_songs_737869_me_me_me_full_english_nikk_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_jingle_mp3 extends flash.media.Sound { }
 @:keep @:bind #if display private #end class __ASSET__assets_sounds_jingle_ogg extends flash.media.Sound { }
@@ -1212,6 +1223,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_regular_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Regular Demo"; } } 
 @:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Thin Demo"; } } 
 @:keep #if display private #end class __ASSET__assets_data_typo_round_typo_round_thin_italic_demo_otf extends lime.text.Font { public function new () { super (); name = "Typo Round Thin Italic Demo"; } } 
+
 
 
 
@@ -1283,6 +1295,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("assets/images/images-go-here.txt") #if display private #end class __ASSET__assets_images_images_go_here_txt extends lime.utils.Bytes {}
 @:image("assets/images/tease.gif") #if display private #end class __ASSET__assets_images_tease_gif extends lime.graphics.Image {}
 @:file("assets/music/music-goes-here.txt") #if display private #end class __ASSET__assets_music_music_goes_here_txt extends lime.utils.Bytes {}
+@:file("assets/music/potential songs/737869_ME-ME-ME-FULL-ENGLISH-Nikk.mp3") #if display private #end class __ASSET__assets_music_potential_songs_737869_me_me_me_full_english_nikk_mp3 extends lime.utils.Bytes {}
 @:file("assets/music/potential songs/745989_When-the-Sky-Falls-Down-an.mp3") #if display private #end class __ASSET__assets_music_potential_songs_745989_when_the_sky_falls_down_an_mp3 extends lime.utils.Bytes {}
 @:file("assets/sounds/jingle.mp3") #if display private #end class __ASSET__assets_sounds_jingle_mp3 extends lime.utils.Bytes {}
 @:file("assets/sounds/jingle.ogg") #if display private #end class __ASSET__assets_sounds_jingle_ogg extends lime.utils.Bytes {}
