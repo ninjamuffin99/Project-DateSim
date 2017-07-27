@@ -82,6 +82,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.BINARY);
 		
 		
+		urls.push ("assets/images/concept/anthonyweiner.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("assets/images/concept/branching_pathsmaybe.jpg");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -267,7 +271,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "386",
+			build: "389",
 			company: "",
 			file: "DateSim",
 			fps: 60,

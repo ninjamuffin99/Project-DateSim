@@ -11,9 +11,25 @@ class Story
 	public static var intro:Array<Array<String>> = 
 	[
 		[
-			"Uhh hey there", 
-			"Umm    How's it going?",
-			"I'm an electron, and you can call me that Iguess"
+			"Hey there ;)",
+			"How's it going?"
+		],
+		
+		[
+			"Yeah heyy you;)",
+			"How's it going cutie?",
+			"Don't see big boys like you around here very often"
+		],
+		
+		[
+			"Hehe woah there buckaroo",
+			"Tone it down with the cowboy",
+			"stuff could ya?",
+			".......",
+			"Just kidding!",
+			"Hahahahah!",
+			"I got you didn't I?",
+			"Cowboys are pretty hunky if you ask me"
 		]
 		
 	];
