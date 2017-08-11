@@ -90,7 +90,7 @@ class PlayState extends FlxState
 			openSubState(_phone);
 		}
 		
-		//temp solution
+		//temp solution??
 		if ( _choices._btnPressed)
 		{
 			if (_choices._getChoices() == 0)
