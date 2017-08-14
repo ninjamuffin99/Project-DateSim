@@ -129,7 +129,7 @@ class Dialogue extends FlxSpriteGroup
 		// -- Create the AutoTypers
 		lines = [];
 		for (i in 0...numberOfLines) {
-			lines[i] = new FlxTypeText(paddingText * 40, (paddingText/2) + i * (_fontSize + paddingText),WIDTH - (paddingText * 2), "blah blah blah", _fontSize	);
+			lines[i] = new FlxTypeText(paddingText * 40, (paddingText/2) + i * (_fontSize + paddingText) + 30, WIDTH - (paddingText * 2), "blah blah blah", _fontSize	);
 			if (_font != null) {
 				lines[i].font = _font;
 			}

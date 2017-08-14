@@ -33,12 +33,12 @@ class PlayState extends FlxState
 		bg.makeGraphic(FlxG.width, FlxG.height);
 		add(bg);
 		
-		_dialogMenu = new DialogMenu(0, 15, ["whatever??", "something else", "More??", "HAHAHA"]);
+		_dialogMenu = new DialogMenu(0, 30, ["whatever??", "something else", "More??", "HAHAHA"]);
 		_dialogMenu.screenCenter(X);
 		add(_dialogMenu);
 		
 		_dialogue = new Dialogue(4, 40, "assets/data/typo_round/Typo_Round_Regular_Demo.otf");
-		_dialogue.y += 10;
+		_dialogue.y = 40;
 		
 		_nameTag = new FlxText(_dialogue.x + 70, _dialogue.y + 100, 0 , "", 18);
 		
