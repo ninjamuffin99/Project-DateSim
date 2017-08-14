@@ -124,7 +124,7 @@ class Dialogue extends FlxSpriteGroup
 		var bgBox = new FlxSprite(0, 0);
 			bgBox = FlxGradient.createGradientFlxSprite(WIDTH, HEIGHT, [FlxColor.TRANSPARENT, FlxColor.BLACK,FlxColor.BLACK, FlxColor.BLACK, FlxColor.BLACK, FlxColor.TRANSPARENT], 1, 0);
 			bgBox.alpha = 0;
-			add(bgBox);
+			//add(bgBox);
 			
 		// -- Create the AutoTypers
 		lines = [];

@@ -21,7 +21,7 @@ class DialogMenu extends FlxSpriteGroup
 	{
 		super(X, Y);
 		_bg = new FlxSprite(0, 0);
-		_bg.makeGraphic(Std.int(FlxG.width * 0.95), Std.int(FlxG.height * 0.35), FlxColor.YELLOW);
+		_bg.makeGraphic(Std.int(FlxG.width * 0.95), Std.int(FlxG.height * 0.35), FlxColor.BLACK);
 		add(_bg);
 		
 		for (i in 0..._menuChoices.length)

@@ -7,13 +7,11 @@ import flixel.FlxG;
  */
 class Scene_Intro extends PlayState 
 {
-	private var _dialogMenu:DialogMenu;
+	
 	override public function create():Void 
 	{
 		super.create();
-		_dialogMenu = new DialogMenu(0, 400, ["whatever??", "something else", "More??", "HAHAHA"]);
-		_dialogMenu.screenCenter(X);
-		add(_dialogMenu);
+		
 		
 		_dialogueStart(Story.intro[0]);
 		_choices._newChoices(["Here is one choice!", "Here is another choice!", "and another!!!!"]);

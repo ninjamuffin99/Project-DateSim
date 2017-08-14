@@ -18,6 +18,7 @@ class PlayState extends FlxState
 	
 	private var _electronImage:FlxSprite;
 	private var _dummyImage:FlxSprite;
+	private var _dialogMenu:DialogMenu;
 	
 	private var _choices:Choices;
 	
@@ -32,8 +33,12 @@ class PlayState extends FlxState
 		bg.makeGraphic(FlxG.width, FlxG.height);
 		add(bg);
 		
+		_dialogMenu = new DialogMenu(0, 15, ["whatever??", "something else", "More??", "HAHAHA"]);
+		_dialogMenu.screenCenter(X);
+		add(_dialogMenu);
 		
-		_dialogue = new Dialogue(4, 24, "assets/data/typo_round/Typo_Round_Regular_Demo.otf");
+		_dialogue = new Dialogue(4, 40, "assets/data/typo_round/Typo_Round_Regular_Demo.otf");
+		_dialogue.y += 10;
 		
 		_nameTag = new FlxText(_dialogue.x + 70, _dialogue.y + 100, 0 , "", 18);
 		
