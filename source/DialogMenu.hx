@@ -14,7 +14,12 @@ import flixel.util.FlxColor;
 class DialogMenu extends FlxSpriteGroup 
 {
 	private var _bg:FlxSprite;
-	private var _btnMenu = [];
+	
+	private var _button0:FlxButton;
+	private var _button1:FlxButton;
+	private var _button2:FlxButton;
+	private var _button3:FlxButton;
+	
 	private var _mainGrp:FlxSpriteGroup;
 	
 	public function new(X:Int, Y:Int, _menuChoices:Array<String>) 
@@ -24,12 +29,27 @@ class DialogMenu extends FlxSpriteGroup
 		_bg.makeGraphic(Std.int(FlxG.width * 0.95), Std.int(FlxG.height * 0.35), FlxColor.BLACK);
 		add(_bg);
 		
-		for (i in 0..._menuChoices.length)
-		{
-			_btnMenu[i] = new FlxButton((FlxG.width * 0.24) * i, _bg.height + 10, _menuChoices[i], whatever);
-			add(_btnMenu[i]);
-		}
+		createButtons();
 		
+		
+	}
+	
+	private function createButtons():Void
+	{
+		var x:Float = FlxG.width * 0.24;
+		var y:Float = -25;
+		
+		_button0 = new FlxButton(x * 0, y, "whatee", function(){FlxG.log.add("ButtonBressed"); });
+		add(_button0);
+		
+		_button1 = new FlxButton(x * 1, y, "whatee", function(){FlxG.log.add("ButtonBressed"); });
+		add(_button1);
+		
+		_button2 = new FlxButton(x * 2, y, "whatee", function(){FlxG.log.add("ButtonBressed"); });
+		add(_button2);
+		
+		_button3 = new FlxButton(x * 3, y, "whatee", function(){FlxG.log.add("ButtonBressed"); });
+		add(_button3);
 	}
 	
 	private function whatever():Void
